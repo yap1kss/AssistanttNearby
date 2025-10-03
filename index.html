@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощник Рядом - цифровой мир без страха и стресса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Хедер -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Помощник Рядом</span>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:88001234567" class="phone-number">8-800-123-45-67</a>
+                    <button class="cta-button" onclick="scrollToSection('contacts')">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Герой-блок -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Цифровой мир — без страха и стресса для вас и ваших родителей</h1>
+                <p class="hero-subtitle">Помогаем людям старшего поколения освоить смартфоны, компьютеры и онлайн-сервисы. Объясняем просто и терпеливо.</p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="scrollToSection('contacts')">Получить помощь</button>
+                    <button class="cta-button secondary" onclick="scrollToSection('services')">Узнать больше</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Пожилая женщина общается по видео">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Блок "Мы поможем с" -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Решим любую техническую проблему</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Смартфоны и планшеты</h3>
+                    <p>Настроим, установим приложения, научим пользоваться</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Компьютеры</h3>
+                    <p>Подключим интернет, настроим почту, почистим от вирусов</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Онлайн-общение</h3>
+                    <p>Научим звонить по видео, писать в мессенджерах, отправлять фото</p>
+                </div>
+            </div>
+            <p class="services-note">И многое другое! Не стесняйтесь спросить!</p>
+        </div>
+    </section>
+
+    <!-- 4. Блок "Как мы работаем" -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Получить помощь — проще простого</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Вы оставляете заявку</h3>
+                    <p>Заполните простую форму или позвоните нам</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Мы звоним вам</h3>
+                    <p>Наш специалист свяжется с вами в удобное время</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Решаем проблему удаленно</h3>
+                    <p>Помогаем через интернет, безопасно и эффективно</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Вы спокойно пользуетесь</h3>
+                    <p>Наслаждаетесь новыми возможностями</p>
+                </div>
+            </div>
+            <div class="remote-help-note">
+                <strong>Помощь удаленно — вам не нужно никуда ехать или пускать кого-то в дом</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Блок "Почему нам доверяют" -->
+    <section class="why-trust">
+        <div class="container">
+            <h2 class="section-title">Мы понимаем вас с полуслова</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Терпеливые специалисты</h3>
+                    <p>Объясняем столько раз, сколько нужно. Без спешки и сложных слов.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Безопасно</h3>
+                    <p>Никогда не просим пароли от банковских карт. Конфиденциальность гарантирована.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Прозрачные цены</h3>
+                    <p>Стоимость услуги известна до начала работы. Никаких скрытых платежей.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Удобно</h3>
+                    <p>Работаем тогда, когда удобно вам. В том числе в вечернее время и выходные.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Блок "Отзывы" -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Нас благодарят</h2>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-photo">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Мария Ивановна">
+                    </div>
+                    <div class="review-content">
+                        <p>"Спасибо Алексею! Научил меня скайпу, теперь каждый день вижу свою правнучку!"</p>
+                        <div class="review-author">— Мария Ивановна, 78 лет</div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-photo">
+                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Валентина Петровна">
+                    </div>
+                    <div class="review-content">
+                        <p>"Долго не решалась платить за интернет через телефон. Анна все показала так, что теперь сама справляюсь. Очень добрый человек!"</p>
+                        <div class="review-author">— Валентина Петровна, 72 года</div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Николай Степанович">
+                    </div>
+                    <div class="review-content">
+                        <p>"Внук живет далеко, а тут такие понимающие ребята помогли настроить планшет. Теперь читаю новости и смотрю фильмы!"</p>
+                        <div class="review-author">— Николай Степанович, 69 лет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Блок "Частые страхи" -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">А если я ничего не пойму?</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon negative">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                        <span>«Я боюсь, что ничего не получится»</span>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-icon positive">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <span>«Мы помогли уже более 1000 человек, обязательно найдем способ объяснить и Вам!»</span>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon negative">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                        <span>«А если мне не понравится?»</span>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-icon positive">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <span>«Если не сможем помочь — вы ничего не платите. Мы вернем деньги.»</span>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon negative">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                        <span>«Это наверное очень дорого?»</span>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-icon positive">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <span>«Стоимость от 500 рублей за консультацию. Дешевле, чем поездка к внукам в другой город.»</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Блок "Для родственников" -->
+    <section class="for-relatives">
+        <div class="container">
+            <h2 class="section-title">Подарите спокойствие и уверенность своим родителям</h2>
+            <p class="relatives-text">Вы живете далеко или у вас нет времени? Мы станем вашими «цифровыми руками»: удаленно поможем маме или папе с любым вопросом.</p>
+            <button class="cta-button certificate" onclick="scrollToSection('contacts')">Подарить сертификат</button>
+        </div>
+    </section>
+
+    <!-- 9. Финальный CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title">Не откладывайте на потом! Позвоните нам прямо сейчас</h2>
+            <p class="cta-subtitle">И уже через час вы сможете самостоятельно позвонить по видео, оплатить коммуналку или отправить фото.</p>
+            <div class="cta-contacts">
+                <a href="tel:88001234567" class="phone-big">8-800-123-45-67</a>
+                <div class="cta-buttons">
+                    <button class="cta-button" onclick="openConsultationModal()">Бесплатная консультация</button>
+                    <a href="https://wa.me/79001234567" class="cta-button whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Написать в WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Футер -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Помощник Рядом</span>
+                </div>
+                <div class="footer-contacts">
+                    <p><strong>Телефон:</strong> 8-800-123-45-67</p>
+                    <p><strong>Email:</strong> help@pomoshchnik-ryadom.ru</p>
+                    <p><strong>Время работы:</strong> Ежедневно с 8:00 до 22:00</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Политика конфиденциальности</a>
+                    <a href="#terms">Договор-оферта</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 «Помощник Рядом». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
